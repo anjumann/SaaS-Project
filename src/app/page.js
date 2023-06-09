@@ -1,12 +1,10 @@
 import { Hero, Services, Portfolio, FAQ, Testimonials, About } from '@/components/Home'
 
 
-export default function Home() {
+export default async function Home() {
 
-  ()=>{
-    Throw
-  }
-
+  
+ 
   return (
     <>
       <div className="">

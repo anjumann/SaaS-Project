@@ -1,7 +1,13 @@
+import Button from "@/components/ui/Button"
+
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <>
+      <div className="">
+        <Button/>
+      </div>
+    </>
   )
 }
 
