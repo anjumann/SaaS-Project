@@ -1,20 +1,26 @@
 import Navigation from '@/components/Navigation'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import PageWrapper from '@/components/PageWrapper'
 
-const inter = Inter({ subsets: ['latin'] })
+import {Unbounded} from 'next/font/google'
 
 export const metadata = {
   title: 'Insiprante | Home',
   description: 'A SaaS based Startup run by students for students.',
 }
-
+const unbounded = Unbounded({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-unbounded',
+})
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Navigation/>
-        {children}
+    <html lang="en" className={`${unbounded.variable} transition-all duration-150 ease-linear `} >
+      <body >
+        <PageWrapper>
+          <Navigation />
+          {children}
+        </PageWrapper>
       </body>
     </html>
   )
