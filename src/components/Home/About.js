@@ -1,13 +1,13 @@
-
+import { Heading } from "../ui/Heading"
 const About = () => {
   return (
 
     <section className="" >
       <div className="p-8 md:p-12 lg:px-16 lg:py-24">
         <div className="mx-auto max-w-lg text-center">
-          <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit
-          </h2>
+          <Heading className="text-2xl font-bold text-gray-900 md:text-3xl" center>
+            Lorem, ipsum dolor.
+          </Heading>
 
           <p className="hidden text-gray-500 sm:mt-4 sm:block">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolor

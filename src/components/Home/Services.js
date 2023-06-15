@@ -6,8 +6,8 @@ const ServicesCard = ({ service }) => {
   return (
     <>
 
-      <div class="w-72 p-4 bg-white shadow-lg rounded-2xl dark:bg-gray-800 glassEffect border-2  ">
-        <p class="mb-4 text-xl  font-medium text-gray-800 dark:text-gray-50">
+      <div class="w-72 p-4 bg-white shadow-lg rounded-2xl dark:bg-gray-800 glassEffect   ">
+        <p class="mb-4 text-xl  font-medium text-gray-800 dark:text-gray-200">
           {title}
         </p>
         {/* <p class="text-3xl font-bold text-gray-900 dark:text-white">
@@ -84,7 +84,7 @@ const Services = () => {
             Our Expertise
             </Heading>
 
-            <p className="mt-4 max-w-md text-gray-900/80">
+            <p className="mt-4 max-w-md text-gray-900/80 dark:text-gray-200/80">
               Tailor-Made Solutions for Your Unique Requirements
             </p>
           </header>

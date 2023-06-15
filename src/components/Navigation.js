@@ -73,7 +73,7 @@ const Navigation = () => {
                 return (
                   <Link
                     href={nav.link}
-                    className="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current "
+                    className="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current text-gray-900 dark:text-gray-100 font-light "
                   >
                     {nav.name}
                   </Link>

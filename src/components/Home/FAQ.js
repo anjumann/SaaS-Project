@@ -2,13 +2,13 @@ import React from 'react'
 
 const FAQ = () => {
   return (
-    <div className="space-y-4 w-8/12 mx-auto">
+    <div className="space-y-4 w-8/12  mx-auto">
       <details
-        className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
+        className="group rounded-lg glassEffect  p-6 [&_summary::-webkit-details-marker]:hidden"
         open
       >
         <summary
-          className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900"
+          className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-300/90"
         >
           <h2 className="font-medium">
             Lorem ipsum dolor sit amet consectetur adipisicing?
@@ -56,10 +56,10 @@ const FAQ = () => {
       </details>
 
       <details
-        className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
+        className="group rounded-lg glassEffect p-6 [&_summary::-webkit-details-marker]:hidden"
       >
         <summary
-          className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900"
+          className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-300/90"
         >
           <h2 className="font-medium">
             Lorem ipsum dolor sit amet consectetur adipisicing?

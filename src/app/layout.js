@@ -24,7 +24,7 @@ const prompt = Prompt({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${unbounded.variable} ${prompt.variable}  transition-all duration-150 ease-linear `} >
+    <html lang="en" className={`${unbounded.variable} ${prompt.variable} transition-all duration-150 ease-linear `} >
       <body >
         <PageWrapper>
           <Navigation />
@@ -35,3 +35,4 @@ export default function RootLayout({ children }) {
     </html>
   )
 }
+  
