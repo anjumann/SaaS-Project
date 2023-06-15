@@ -5,7 +5,7 @@ import { ThemeProvider } from 'next-themes'
 const PageWrapper = ({ children }) => {
     return (
         <>
-            <ThemeProvider attribute="class">
+            <ThemeProvider attribute="class" defaultTheme='light' enableSystem={false}>
                 {children}
             </ThemeProvider>
         </>
