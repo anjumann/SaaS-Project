@@ -1,7 +1,11 @@
 "use client"
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useTheme } from "next-themes";
+import { ImSun } from 'react-icons/im'
+import { TbMoonStars } from 'react-icons/tb'
+
 const Button = ({ onClick, children }) => {
   const [isHovered, setHovered] = useState(false);
   const [isActive, setActive] = useState(false);
@@ -31,4 +35,37 @@ const Button = ({ onClick, children }) => {
   );
 };
 
-export default Button;
+
+const DarkModeButton = () => {
+
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
+  const handleThemeChange = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  }
+  return (
+    <>
+      <motion.div className="p-1.5 text-lg cursor-pointer " onClick={handleThemeChange} >
+        {theme === "dark" ? (
+          <motion.span>
+            <ImSun className='text-gray-100' />
+          </motion.span>
+        ) : (
+          <motion.span>
+            <TbMoonStars className='text-gray-700' />
+          </motion.span>
+        )}
+      </motion.div>
+    </>
+  )
+}
+
+
+export { Button, DarkModeButton };

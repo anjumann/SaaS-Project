@@ -9,12 +9,13 @@ html {
 }
 
 .glassEffect {
-  backdrop-filter: blur(6px) saturate(181%);
+  backdrop-filter: blur(6px) saturate(181%) opacity(0.8);
   -webkit-backdrop-filter: blur(6px) saturate(181%);
   background-color: rgba(228, 228, 228, 0.19);
   border: 1px solid rgba(209, 213, 219, 0.3);
   background: linear-gradient(145deg, #cacaca67, #f0f0f082);
   box-shadow: 20px 20px 60px #bebebe8e, -20px -20px 60px #ffffff;
+  background-blend-mode: overlay;
 }
 
 .glassEffectColor {

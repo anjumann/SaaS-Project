@@ -81,7 +81,7 @@ const Services = () => {
           <header>
             
             <Heading url="/services" >
-            Our Services
+            Our Expertise
             </Heading>
 
             <p className="mt-4 max-w-md text-gray-500">
