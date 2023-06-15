@@ -36,7 +36,7 @@ const Navigation = () => {
 
   return (
     <>
-      <header className="border-b border-gray-100 font-prompt sticky top-0 z-40 glassEffect  ">
+      <header className=" font-prompt sticky top-0 z-40 backdrop-blur-lg  ">
         <div
           className="mx-auto flex h-16 max-w-screen-2xl items-center justify-between sm:px-6 lg:px-8"
         >
@@ -60,7 +60,7 @@ const Navigation = () => {
 
             <a href="#" className="flex">
               <span className="sr-only">Logo</span>
-              <span className="inline-block h-10 w-32 rounded-lg bg-gray-200"></span>
+              <span className="inline-block h-10 w-32 rounded-lg bg-gray-200 dark:bg-gray-700/80"></span>
             </a>
           </div>
 

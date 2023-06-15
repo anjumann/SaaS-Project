@@ -1,4 +1,4 @@
-import { Heading } from "../ui/Heading"
+import { Heading, SubHeading } from "../ui/Heading"
 const About = () => {
   return (
 
@@ -9,11 +9,9 @@ const About = () => {
             Lorem, ipsum dolor.
           </Heading>
 
-          <p className="hidden text-gray-500 sm:mt-4 sm:block">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolor
-            officia blanditiis repellat in, vero, aperiam porro ipsum laboriosam
+          <SubHeading center >
             consequuntur exercitationem incidunt tempora nisi?
-          </p>
+          </SubHeading>
         </div>
 
         <div className="mx-auto mt-8 max-w-xl">

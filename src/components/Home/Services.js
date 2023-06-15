@@ -1,4 +1,4 @@
-import { Heading } from "../ui/Heading"
+import { Heading, SubHeading } from "../ui/Heading"
 
 
 const ServicesCard = ({ service }) => {
@@ -79,14 +79,14 @@ const Services = () => {
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
           <header>
-            
+
             <Heading url="/services" >
-            Our Expertise
+              Our Expertise
             </Heading>
 
-            <p className="mt-4 max-w-md text-gray-900/80 dark:text-gray-200/80">
+            <SubHeading>
               Tailor-Made Solutions for Your Unique Requirements
-            </p>
+            </SubHeading>
           </header>
 
           <div className="mt-8">

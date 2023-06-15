@@ -10,7 +10,7 @@ const FAQ = () => {
         <summary
           className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-300/90"
         >
-          <h2 className="font-medium">
+          <h2 className="font-medium text-gray-700 dark:text-gray-200/80">
             Lorem ipsum dolor sit amet consectetur adipisicing?
           </h2>
 
@@ -61,7 +61,7 @@ const FAQ = () => {
         <summary
           className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-300/90"
         >
-          <h2 className="font-medium">
+          <h2 className="font-medium text-gray-700 dark:text-gray-200/80 ">
             Lorem ipsum dolor sit amet consectetur adipisicing?
           </h2>
 

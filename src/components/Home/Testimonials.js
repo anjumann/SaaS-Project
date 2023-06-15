@@ -12,7 +12,7 @@ const Testimonials = () => {
 
           {[1, 2, 3].map((_, index) => {
             return (
-              <blockquote className="rounded-2xl bg-gray-100 p-8 glassEffect ">
+              <blockquote className="rounded-2xl bg-gray-100 dark:bg-gray-700/40 p-8 bg-opacity-25 backdrop-blur-md ">
                 <div className="flex items-center gap-4">
                   <img
                     alt="Man"
@@ -74,11 +74,11 @@ const Testimonials = () => {
                       </svg>
                     </div>
 
-                    <p className="mt-1 text-lg font-medium text-gray-700">Paul Starr</p>
+                    <p className="mt-1 text-lg font-medium text-gray-900 dark:text-gray-200">Paul Starr</p>
                   </div>
                 </div>
 
-                <p className="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500">
+                <p className="line-clamp-2 sm:line-clamp-none mt-4 text-gray-800 dark:text-gray-200">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
                   voluptatem alias ut provident sapiente repellendus.
                 </p>

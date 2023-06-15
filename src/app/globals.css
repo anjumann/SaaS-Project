@@ -1,3 +1,7 @@
+*::-webkit-scrollbar {
+  display: none;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,6 +11,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+
 
 .glassEffect {
   backdrop-filter: blur(6px) saturate(181%) opacity(0.8);

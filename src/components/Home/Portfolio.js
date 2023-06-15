@@ -1,3 +1,4 @@
+import { Heading, SubHeading } from "../ui/Heading"
 
 const ServicesCard = ({ service }) => {
   const { title, description, features, image } = service
@@ -8,12 +9,12 @@ const ServicesCard = ({ service }) => {
         <p class="mb-4 text-xl font-medium text-gray-800 dark:text-gray-50">
           {title}
         </p>
-        <p class="text-3xl font-bold text-gray-900 dark:text-white">
+        {/* <p class="text-3xl font-bold text-gray-900 dark:text-white">
           $0
           <span class="text-sm text-gray-300">
             / month
           </span>
-        </p>
+        </p> */}
         <p class="mt-4 text-xs text-gray-600 dark:text-gray-100">
           {description}
         </p>
@@ -68,7 +69,7 @@ const Portfolio = () => {
       "description": "Deliver exceptional experiences with captivating designs.",
       "features": ["Visually Stunning", "Intuitive", "Seamless Interactions", "User-centric", "Brand Transformation"],
       "image": "ui-ux-design.jpg"
-    }
+    },
   ]
 
   return (
@@ -76,20 +77,17 @@ const Portfolio = () => {
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
           <header>
-            <h2 className="text-xl font-bold text-gray-900 sm:text-3xl font-unbounded ">
-              Our Services
-            </h2>
-
-            <p className="mt-4 max-w-md text-gray-500">
+            <Heading>Our Projects</Heading>
+            <SubHeading>
               Unleash Your Business's Full Potential
-            </p>
+            </SubHeading>
           </header>
 
           <div className="mt-8">
             <p className="text-sm text-gray-500"></p>
           </div>
 
-          <div className="mt-4 grid gap-3 lg:gap-6 sm:grid-cols-1 lg:grid-cols-4">
+          <div className="mt-4 grid gap-3 lg:gap-6 sm:grid-cols-1 lg:grid-cols-4  w-fit mx-auto ">
 
             {serviceList.map((service, index) => {
               return (
