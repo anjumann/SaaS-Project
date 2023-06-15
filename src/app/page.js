@@ -8,15 +8,16 @@ export default async function Home() {
   return (
     <>
       <div className="">
-        <div className="">
+        <div className="relative">
           <Hero />
+          <div className="gradient-01 -z-10" />
           <Services />
         </div>
-        <div className="">
+        <div className="relative">
           <Portfolio />
           <Testimonials />
         </div>
-        <div className="">
+        <div className="relative">
           <About />
           <FAQ />
         </div>

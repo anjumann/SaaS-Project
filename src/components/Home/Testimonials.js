@@ -3,7 +3,7 @@ import { Heading } from '../ui/Heading'
 
 const Testimonials = () => {
   return (
-    <section className="bg-white">
+    <section className="">
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <Heading center >
           Read trusted reviews from our customers

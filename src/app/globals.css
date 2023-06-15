@@ -26,3 +26,14 @@ html {
   box-shadow: 20px 20px 60px #bebebe8e, -20px -20px 60px #ffffff;
 }
 
+.gradient-01 {
+  position: fixed;
+  width: 404px;
+  height: 800px;
+  left: 20%;
+  top: 5%;
+
+  background: #705cf47f;
+  filter: blur(175px);
+  transform: rotate(-114.2deg);
+}

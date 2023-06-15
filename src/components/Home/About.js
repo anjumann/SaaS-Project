@@ -18,7 +18,7 @@ const About = () => {
 
         <div className="mx-auto mt-8 max-w-xl">
           <form action="#" className="sm:flex sm:gap-4">
-            <div className="sm:flex-1">
+            <div className="sm:flex-1 glassEffect rounded-md">
               <label htmlFor="email" className="sr-only">Email</label>
 
               <input
