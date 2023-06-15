@@ -6,8 +6,8 @@ const ServicesCard = ({ service }) => {
   return (
     <>
 
-      <div class="w-72 p-4 bg-white shadow-lg rounded-2xl dark:bg-gray-800 glassEffect  ">
-        <p class="mb-4 text-xl font-medium text-gray-800 dark:text-gray-50">
+      <div class="w-72 p-4 bg-white shadow-lg rounded-2xl dark:bg-gray-800 glassEffect border-2  ">
+        <p class="mb-4 text-xl  font-medium text-gray-800 dark:text-gray-50">
           {title}
         </p>
         {/* <p class="text-3xl font-bold text-gray-900 dark:text-white">
@@ -84,7 +84,7 @@ const Services = () => {
             Our Expertise
             </Heading>
 
-            <p className="mt-4 max-w-md text-gray-500">
+            <p className="mt-4 max-w-md text-gray-900/80">
               Tailor-Made Solutions for Your Unique Requirements
             </p>
           </header>
@@ -93,7 +93,7 @@ const Services = () => {
             <p className="text-sm text-gray-500"></p>
           </div>
 
-          <div className="mt-4 grid gap-3 lg:gap-6 sm:grid-cols-1 lg:grid-cols-4">
+          <div className="mt-4 grid gap-3 lg:gap-6 sm:grid-cols-1 lg:grid-cols-4 w-fit mx-auto ">
 
             {serviceList.map((service, index) => {
               return (
