@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         unbounded: ['var(--font-unbounded)'],
+        prompt: ['var(--font-prompt)'],
       },
     },
   },
