@@ -4,13 +4,13 @@ const FAQ = () => {
   return (
     <div className="space-y-4 w-8/12  mx-auto">
       <details
-        className="group rounded-lg glassEffect  p-6 [&_summary::-webkit-details-marker]:hidden"
+        className="group rounded-lg dark:bg-gray-800/20 glassEffect  p-6 [&_summary::-webkit-details-marker]:hidden"
         open
       >
         <summary
           className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-300/90"
         >
-          <h2 className="font-medium text-gray-700 dark:text-gray-200/80">
+          <h2 className="font-medium text-gray-700 dark:text-gray-200">
             Lorem ipsum dolor sit amet consectetur adipisicing?
           </h2>
 
@@ -47,7 +47,7 @@ const FAQ = () => {
           </span>
         </summary>
 
-        <p className="mt-4 leading-relaxed text-gray-700">
+        <p className="mt-4 leading-relaxed text-gray-700 dark:text-gray-200/70">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
           molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
           voluptate dicta quo officiis explicabo consequuntur distinctio corporis
@@ -61,7 +61,7 @@ const FAQ = () => {
         <summary
           className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-300/90"
         >
-          <h2 className="font-medium text-gray-700 dark:text-gray-200/80 ">
+          <h2 className="font-medium text-gray-700 dark:text-gray-200 ">
             Lorem ipsum dolor sit amet consectetur adipisicing?
           </h2>
 
@@ -98,7 +98,7 @@ const FAQ = () => {
           </span>
         </summary>
 
-        <p className="mt-4 leading-relaxed text-gray-700">
+        <p className="mt-4 leading-relaxed text-gray-700 dark:text-gray-200/70">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
           molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
           voluptate dicta quo officiis explicabo consequuntur distinctio corporis

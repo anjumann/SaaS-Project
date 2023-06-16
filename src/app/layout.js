@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation'
 import './globals.css'
 import PageWrapper from '@/components/PageWrapper'
+import { ClerkProvider } from '@clerk/nextjs'
 
 import { Unbounded, Prompt } from 'next/font/google'
 import Footer from '@/components/Footer'
@@ -24,15 +25,16 @@ const prompt = Prompt({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${unbounded.variable} ${prompt.variable} transition-all duration-150 ease-linear `} >
-      <body >
-        <PageWrapper>
-          <Navigation />
-          {children}
-          <Footer />
-        </PageWrapper>
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en" className={`${unbounded.variable} ${prompt.variable} transition-all duration-150 ease-linear `} >
+        <body >
+          <PageWrapper>
+            <Navigation />
+            {children}
+            <Footer />
+          </PageWrapper>
+        </body>
+      </html>
+    </ClerkProvider>
   )
 }
-  

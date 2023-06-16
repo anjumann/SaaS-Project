@@ -58,10 +58,10 @@ const Navigation = () => {
               </svg>
             </button>
 
-            <a href="#" className="flex">
+            <Link href="/" className="flex">
               <span className="sr-only">Logo</span>
               <span className="inline-block h-10 w-32 rounded-lg bg-gray-200 dark:bg-gray-700/80"></span>
-            </a>
+            </Link>
           </div>
 
           <div className="flex flex-1 items-center justify-end gap-8">
@@ -69,10 +69,11 @@ const Navigation = () => {
               aria-label="Global"
               className="hidden lg:flex lg:gap-4 lg:text-xs lg:font-bold lg:uppercase lg:tracking-wide lg:text-gray-700"
             >
-              {Navlist.map((nav) => {
+              {Navlist.map((nav, index) => {
                 return (
                   <Link
                     href={nav.link}
+                    key={index}
                     className="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current text-gray-900 dark:text-gray-100 font-light "
                   >
                     {nav.name}

@@ -12,7 +12,7 @@ const Testimonials = () => {
 
           {[1, 2, 3].map((_, index) => {
             return (
-              <blockquote className="rounded-2xl bg-gray-100 dark:bg-gray-700/40 p-8 bg-opacity-25 backdrop-blur-md ">
+              <blockquote key={index} className="rounded-2xl bg-gray-100 dark:bg-gray-700/40 p-8 bg-opacity-25 backdrop-blur-md ">
                 <div className="flex items-center gap-4">
                   <img
                     alt="Man"

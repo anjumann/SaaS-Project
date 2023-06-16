@@ -13,7 +13,7 @@ const Heading = ({ children, center }) => {
 const SubHeading = ({ children, center }) => {
 
   return (
-    <p class="mt-4 text-sm text-gray-600/90 text-center md:text-left dark:text-gray-100/90">
+    <p className="mt-4 text-sm text-gray-600/90 text-center md:text-left dark:text-gray-100/90">
       {children}
     </p>
   )
