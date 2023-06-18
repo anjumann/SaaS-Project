@@ -1,8 +1,8 @@
 
 
 export const metadata = {
-    title: 'Insiprante | Career',
-    description: 'Career page for Insiprante.',
+    title: 'site-crafter | Career',
+    description: 'Career page for site-crafter.',
 }
 
 export default function Layout({ children }) {

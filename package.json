@@ -1,5 +1,5 @@
 {
-  "name": "inspirante",
+  "name": "site-crafter",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.21.2",
+    "@next/font": "^13.4.6",
+    "@vercel/analytics": "^1.0.1",
     "autoprefixer": "10.4.14",
     "framer-motion": "^10.12.16",
     "next": "13.4.4",

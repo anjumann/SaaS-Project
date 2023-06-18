@@ -2,12 +2,14 @@ import Navigation from '@/components/Navigation'
 import './globals.css'
 import PageWrapper from '@/components/PageWrapper'
 import { ClerkProvider } from '@clerk/nextjs'
+import { Analytics } from '@vercel/analytics/react';
 
-import { Unbounded, Prompt } from 'next/font/google'
+
+import { Unbounded, Prompt } from '@next/font/google'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: 'Insiprante | Home',
+  title: 'site-crafter | Home',
   description: 'A SaaS based Startup run by students for students.',
 }
 const unbounded = Unbounded({
@@ -31,6 +33,7 @@ export default function RootLayout({ children }) {
           <PageWrapper>
             <Navigation />
             {children}
+            <Analytics />
             <Footer />
           </PageWrapper>
         </body>

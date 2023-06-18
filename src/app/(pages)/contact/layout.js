@@ -1,8 +1,8 @@
 
 
 export const metadata = {
-    title: 'Insiprante | Contact',
-    description: 'Contact page for Insiprante.',
+    title: 'site-crafter | Contact',
+    description: 'Contact page for site-crafter.',
 }
 
 export default function Layout({ children }) {

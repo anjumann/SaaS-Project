@@ -1,7 +1,7 @@
 
 export const metadata = {
-    title: 'Insiprante | Portfolio',
-    description: 'Portfolio page for Insiprante.',
+    title: 'site-crafter | Portfolio',
+    description: 'Portfolio page for site-crafter.',
 }
 
 export default function Layout({ children }) {

@@ -1,8 +1,8 @@
 
 
 export const metadata = {
-    title: 'Insiprante | Team',
-    description: 'Team page for Insiprante.',
+    title: 'site-crafter | Team',
+    description: 'Team page for site-crafter.',
 }
 
 export default function Layout({ children }) {
