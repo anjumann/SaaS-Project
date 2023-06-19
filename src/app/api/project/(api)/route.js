@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server'
 
+
+
 export async function GET(request) {
     const { searchParams } = new URL(request.url)
     const res = await fetch('https://jsonplaceholder.typicode.com/photos', {
@@ -15,3 +17,4 @@ export async function GET(request) {
     
     return NextResponse.json({ "data": photos, "size": photos.length, "totalPage": totalPage })
 }
+

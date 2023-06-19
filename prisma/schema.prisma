@@ -14,11 +14,10 @@ model User {
   id        String    @id @default(auto()) @map("_id") @db.ObjectId
   email     String    @unique
   name      String?
-  username  String?
+  username  String?   @unique
   password  String
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
-  deletedAt DateTime?
 }
 
 model Project {
@@ -29,7 +28,6 @@ model Project {
   intro       String?
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
-  deletedAt   DateTime?
 }
 
 model Team {
@@ -40,7 +38,6 @@ model Team {
   image       String?
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
-  deletedAt   DateTime?
 }
 
 model Link {
@@ -51,7 +48,6 @@ model Link {
   updatedAt DateTime  @updatedAt
   team      Team      @relation(fields: [teamId], references: [id], onDelete: Cascade)
   teamId    String    @db.ObjectId
-  deletedAt DateTime?
 }
 
 model Services {
@@ -64,5 +60,4 @@ model Services {
   price       String?
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
-  deletedAt   DateTime?
 }
