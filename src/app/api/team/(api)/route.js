@@ -4,15 +4,7 @@ import { checkExistingMember, createMember, updateTeam, deleteMember, getMemberB
 
 export async function POST(request) {
     const memberInfo = await request.json()
-    // const teamExist = await checkExistingteam(memberInfo.email)
-    // console.log('team', teamExist);
-    // if (teamExist) {
-    //     return NextResponse.json({ data: { message: 'team already exist' } })
-    // }
-    // const usernameExist = await checkteamname(memberInfo.teamname) 
-    // if (usernameExist) {
-    //     return NextResponse.json({ data: { message: 'Username already exist' } })
-    // }
+    
     const res = await createMember(memberInfo)
     return NextResponse.json({ data: res })
 }

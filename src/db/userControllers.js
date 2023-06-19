@@ -51,6 +51,7 @@ const updateUser = async (userInfo) => {
         const res = await prisma.user.update({
             name, username
         })
+        return res
     } catch (error) {
         console.log(error);
         return error
