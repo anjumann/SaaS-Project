@@ -7,10 +7,10 @@ const Hero = () => {
 
   return (
     <>
-      <div className="grid grid-row-2 grid-cols-1 md:grid-cols-2 md:grid-rows-1 h-[60vh] md:h-[70vh]  ">
+      <div className="grid grid-row-2 grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 h-[60vh] md:h-[70vh]  ">
         <div className={`bg-[url('/herobg2.svg')]   bg-contain bg-no-repeat 
-           h-full w-full flex  text-center md:text-left  items-center justify-center `}>
-          <div className="h-fit w-full md:w-[75%] font-unbounded text-4xl md:text-5xl text-bright-grey dark:text-gray-200 font-bold p-2 pt-10 md:p-10 md:rounded-3xl  glassEffect dark:bg-gray-800/60 ">
+           h-full w-full flex  text-center lg:text-left  items-center justify-center `}>
+          <div className="h-fit w-[95%] md:w-[90%] lg:w-[75%] font-unbounded text-4xl md:text-5xl text-bright-grey dark:text-gray-200 font-bold p-2 pt-10 md:p-10 rounded-2xl md:rounded-3xl  glassEffect dark:bg-gray-800/60 ">
             Committed To People <br />
             Committed To <span className="text-primary-purple dark:text-[#e16f6f] " >The Future</span>
             <div className="text-lg font-light mt-8 text-gray-900/80 dark:text-gray-200/90">Lorem ipsum Lorem ipsum dolor sit  dolor sit aon.</div>
